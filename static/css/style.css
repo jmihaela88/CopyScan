@@ -110,9 +110,22 @@ main {
 }
 .animated-logo {
     width: auto;
-    max-width: 700px; /* sau cât vrei */
+    max-width: 700px;
     height: auto;
     animation: pulse 3s ease-in-out infinite;
 }
 
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #343a40;
+    border-radius: 8px; 
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .navbar-collapse .nav-link {
+    color: #fff !important;
+  }
+}
 
