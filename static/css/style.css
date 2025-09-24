@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.add-to-cart {
+    transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #343a40;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #adb5bd !important;
+}
+
+.minus-btn, .plus-btn {
+    width: 40px;
+}
+
+.cart-count {
+    position: relative;
+    top: -2px;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+    
+    .product-card .btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+}
+
+header img {
+  animation: pulse 3s ease-in-out infinite;
+}
+.text-pink {
+  color: #e83e8c !important;
+}
+
+.text-purple {
+  color: #6f42c1 !important;
+}
+.text-lime {
+	color: #28a745 !important;
+}
+.text-orange {
+	color: #ff7300 !important;
+}
+
+.text-candy {
+	color: #8cffba !important;
+}
+
+.text-dune {
+	color: #1f565a !important;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+.animated-logo {
+    width: auto;
+    max-width: 700px; /* sau cât vrei */
+    height: auto;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+
